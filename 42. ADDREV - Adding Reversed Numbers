@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	// your code goes here
+	
+	int n;
+	cin>>n;
+	while(n--)
+	{
+		int a,b;
+		cin>>a>>b;
+		int p,q;
+		p=a;
+		q=b;
+		int reversed_number = 0 ;
+ 
+while(a) {
+ 
+reversed_number *= 10;
+ 
+reversed_number+=a%10;
+ 
+a /= 10;
+}
+	int reversednumber = 0  ;
+ 
+while(b ) {
+ 
+reversednumber*= 10;
+ 
+reversednumber+= b%10;
+ 
+b/= 10;
+}
+int sum=0;
+sum=reversednumber + reversed_number;
+int reversenumber=0 ;
+ 
+while(sum ) {
+ 
+reversenumber *=10;
+ 
+reversenumber +=sum%10;
+ 
+sum/= 10;
+}
+ 
+		cout<<reversenumber<<'\n';
+	}
+	return 0;
+} 
