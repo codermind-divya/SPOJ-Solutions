@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+ 
+int main(void) {
+	// your code goes her
+int t;
+scanf("%d",&t);
+while(t--)
+{
+    long long int n,x=50,sum=0;
+    scanf("%lld",&n);
+    for(long long int i=5;x<=0 || i<=n;i*=5)
+    {
+        x=n/i;
+        sum=sum+x;
+    }
+    printf("%lld\n",sum);
+}
+	
+	return 0;
+}
+ 
